@@ -1,18 +1,34 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Dictionaries and Data Transfer"
 date:   2020-10-24 10:30:57 -0400
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+1. dict
 
-Jekyll requires blog post files to be named according to the following format:
+The dictionary is one of the most useful objects for data structures and transfer. They are made up of a series of key-value pairs, where the key is a string index and the values can be any object type (numbers, strings, lists, or even other dicts):
 
-`YEAR-MONTH-DAY-title.MARKUP`
+{% highlight python %}
+d = {‘key1’:value1,’key2’:value2,…}
+d[key] = value
+key in value
+{% endhighlight %}
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Data tables can be naturally constructed from dictionaries, where the key serves as the column name and the values are taken as row values or indexed row values. This makes initializing a pandas DataFrame from a dictionary very simple:
+df = {}
+df[‘’]
 
-Jekyll also offers powerful support for code snippets:
+The Python default_dict object specifies . For example, if using a dict to iteraively, the append() method can be passed onto the
+
+2.        JSON
+3.        HTML requests and Web APIs
+4.        RESTful Frameworks for Web Applications
+
+
+{% highlight python %}
+x = ('a', 1, False)
+{% endhighlight %}
+
 
 {% highlight ruby %}
 def print_hi(name)
