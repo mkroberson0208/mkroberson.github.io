@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Michael K. Roberson
+title: Notes on Data Tools and Statistical Models
 email: mkroberson0208@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   My personal site for code snippets and tips on statistical programming
@@ -28,7 +28,7 @@ twitter_username: Robers2K
 github_username:  mkroberson0208
 
 # Build settings
-theme: minima
+theme: cayman
 plugins:
   - jekyll-feed
 
