@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Notes on Data Tools and Statistical Models
+title: My Notes on Data Tools and Statistical Models
 email: mkroberson0208@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   My personal site for code snippets and tips on statistical programming
@@ -32,6 +32,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
+
+minima:
+  skin: dark
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
