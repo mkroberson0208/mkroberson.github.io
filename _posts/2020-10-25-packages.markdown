@@ -1,0 +1,18 @@
+
+
+Managing Dependencies in Python
+
+
+Software usually has a modular design. The individual features or tools are independent, separable, and can be added or removed in different combinations. This means they can also be improved and updated on parallel project timelines.
+
+The draw-back is that this modular design creates many *dependencies* between features. A complicated Python program
+
+
+1. virtualenv and Anaconda
+
+The default python package management tool is virtualenv (). 
+
+
+conda create --name myenv
+
+2. docker
