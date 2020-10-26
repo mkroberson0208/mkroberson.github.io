@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Python dict and Data Interchange"
+title:  "Python dict and Data Transfer"
 date:   2020-10-24 10:30:57 -0400
 categories: jekyll update
 ---
 ## 1. dict 
 
- The dictionary is one of the most useful Python objects for data structure and interchange. They are defined as a series of key-value pairs, where the key is a string index and the values can be any object type (numbers, strings, lists, or even other dicts):
+The dictionary is one of the most useful Python objects for data structuring and transfer. They are defined as a series of key-value pairs, where the key is a string index and the values can be any object type (numbers, strings, lists, or even other dicts):
 
 {% highlight python %}
 # init
@@ -21,10 +21,11 @@ d['d']
 key in value
 {% endhighlight %}
 
+<br/><br/>
 
- Data tables can be naturally constructed from dictionaries, where the key serves as the column name and the values are taken as row values or indexed row values. This makes initializing a pandas DataFrame from a dictionary very simple:
+Data tables can be naturally constructed from dictionaries, where the key serves as the column name and the values are taken as row values or indexed row values. This makes initializing a pandas DataFrame from a dictionary very simple:
 
- Example from Federal Reserve (FRED) API:
+Example from Federal Reserve (FRED) API:
 
 {% highlight python %}
 df = {}
@@ -41,7 +42,7 @@ If building a dict iteratively, the append() method can be passed as long as the
 {% highlight python %}
 from collections import defaultdict
 d = defaultdict(list)
-for i in range(0,3):
+for i in range(0,10):
 	d['ones'].append(i)
 	d['twos'].append(2*i)
 	d['threes'].append(3*i)
@@ -52,10 +53,41 @@ for i in range(0,3):
 
 ## 2. JSON
 
-Javascript Object Notation (JSON) is a file format standard for data interchange. It is structured very similar to Python dict, 
+Javascript Object Notation (JSON) is a file format standard for data interchange. It is structured as a series of nested dicts or key-valye pairs. Comparable to Extensible Markup Languauge (XML) . 
 
+The defaultdict object above would be respresented by the single string:
+
+{% highlight python %}
+{
+    "ones": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "twos": [
+        0,
+        2,
+        4,
+        6
+    ],
+    "threes": [
+        0,
+        3,
+        6,
+        9
+    ]
+}
+{% endhighlight %}
+
+Python comes with a default json package (https://docs.python.org/3/library/json.html) to encode/decode JSON format.
+
+JSON files are very useful when encoding nested tables and metadata, meaning information about other datasets such source or shared column names.
 
 ## 3. HTML requests and Web APIs
+
+JSON is often used to transfer data over the internet. 
+
 
 ## 4. REST Framework for Web Applications
 
