@@ -2,7 +2,7 @@
 layout: post
 title:  "Python dict and Data Transfer"
 date:   2020-10-24 10:30:57 -0400
-categories: jekyll update
+categories: data tools
 ---
 ## 1. dict 
 
@@ -80,14 +80,28 @@ The defaultdict object above would be respresented by the single string:
 }
 {% endhighlight %}
 
-Python comes with a default json package (https://docs.python.org/3/library/json.html) to encode/decode JSON format.
+Python comes with a built-in json package (https://docs.python.org/3/library/json.html) to encode/decode JSON format.
 
-JSON files are very useful when encoding nested tables and metadata, meaning information about other datasets such source or shared column names.
+{% highlight python %}
+import json
+# as string
+json.dumps(d,indent=4)
+# write to file
+with open('data.txt', 'w') as fp:
+  json.dump(d, fp, indent=4)
+# read from file
+json.load('data.txt')
+{% endhighlight %}
+
+JSON files are very useful when encoding nested tables and metadata, meaning information about other datasets such source or shared column names. 
+
+<br/><br/>
 
 ## 3. HTML requests and Web APIs
 
 JSON is often used to transfer data over the internet. 
 
+<br/><br/>
 
 ## 4. REST Framework for Web Applications
 
