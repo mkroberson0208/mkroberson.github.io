@@ -1,19 +1,23 @@
 ---
 layout: post
-title:  "Python dict and Data Transfers"
+title:  "Python dict and Data Interchange"
 date:   2020-10-24 10:30:57 -0400
 categories: jekyll update
 ---
 ## 1. dict 
 
- The dictionary is one of the most useful Python objects for data structuring and transfer. They are defined as a series of key-value pairs, where the key is a string index and the values can be any object type (numbers, strings, lists, or even other dicts):
+ The dictionary is one of the most useful Python objects for data structure and interchange. They are defined as a series of key-value pairs, where the key is a string index and the values can be any object type (numbers, strings, lists, or even other dicts):
 
 {% highlight python %}
+# init
 d = {}
 d = {'a':0,'b':1,'c':2}
 d = dict(zip(['a','b','c'],range(0,3)))
+# set key to value
 d['key'] = value
 d['d'] = 4
+d['d']
+# check if value has key
 key in value
 {% endhighlight %}
 
@@ -38,16 +42,17 @@ If building a dict iteratively, the append() method can be passed as long as the
 from collections import defaultdict
 d = defaultdict(list)
 for i in range(0,3):
-	d['one'].append(i)
-	d['two'].append(2*i)
+	d['ones'].append(i)
+	d['twos'].append(2*i)
+	d['threes'].append(3*i)
 {% endhighlight %}
 
 
 <br/><br/>
-<br/><br/>
+
 ## 2. JSON
 
-Javascript Object Notation (JSON) is 
+Javascript Object Notation (JSON) is a file format standard for data interchange. It is structured very similar to Python dict, 
 
 
 ## 3. HTML requests and Web APIs
