@@ -6,7 +6,7 @@ categories: data tools
 ---
 ## 1. dict 
 
-The dictionary is one of the most useful Python objects for data structuring and transfer. They are defined as a series of key-value pairs, where the key is a string index and the values can be any object type (numbers, strings, lists, or even other dicts):
+The dictionary is one of the most useful Python objects for data structuring and transfer. They are defined as a series of key-value pairs, where the key is a string index and the values can be any object type (numbers, strings, lists, or other dicts):
 
 {% highlight python %}
 # init
@@ -21,9 +21,7 @@ d['d']
 key in value
 {% endhighlight %}
 
-<br/><br/>
-
-Data tables can be naturally constructed from dictionaries, where the key serves as the column name and the values are taken as row values or indexed row values. This makes initializing a pandas DataFrame from a dictionary very simple:
+Data tables can be naturally constructed from dictionaries, where the key serves as column name and the values are taken as row values or indexed row values. This makes initializing a pandas DataFrame from a dictionary very simple:
 
 Example from Federal Reserve (FRED) API:
 
@@ -53,9 +51,9 @@ for i in range(0,10):
 
 ## 2. JSON
 
-Javascript Object Notation (JSON) is a file format standard for data interchange. It is structured as a series of nested dicts or key-valye pairs. Comparable to Extensible Markup Languauge (XML) . 
+Javascript Object Notation (JSON) is a file format standard for data interchange. It is structured as a series of nested dicts or key-value pairs. Comparable to Extensible Markup Languauge (XML), it was originally developed for server-to-browser Web applications. 
 
-The defaultdict object above would be respresented by the single string:
+The defaultdict object above would be represented by the string:
 
 {% highlight python %}
 {
@@ -80,17 +78,18 @@ The defaultdict object above would be respresented by the single string:
 }
 {% endhighlight %}
 
-Python comes with a built-in json package (https://docs.python.org/3/library/json.html) to encode/decode JSON format.
+Python comes with a [built-in json package](https://docs.python.org/3/library/json.html) to encode/decode JSON format.
 
 {% highlight python %}
 import json
 # as string
 json.dumps(d,indent=4)
 # write to file
-with open('data.txt', 'w') as fp:
+with open('data.json', 'w') as fp:
   json.dump(d, fp, indent=4)
 # read from file
-json.load('data.txt')
+with open('data.json', 'r') as fp:
+  d = json.load(fp)
 {% endhighlight %}
 
 JSON files are very useful when encoding nested tables and metadata, meaning information about other datasets such source or shared column names. 
