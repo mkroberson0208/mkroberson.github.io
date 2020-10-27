@@ -96,9 +96,11 @@ JSON files are very useful when encoding nested tables and metadata, meaning inf
 
 <br/><br/>
 
-## 3. HTML requests and Web APIs
+## 3. HTTP requests and Web APIs
 
-JSON is often used to transfer data over the internet. 
+JSON is often used to transfer data over the internet and display that data on a web-page. HTTP web-pages are hyper-text or hyper-media consisting . Each element in the page 
+
+The [Python requests package](https://requests.readthedocs.io/en/master/)
 
 <br/><br/>
 
