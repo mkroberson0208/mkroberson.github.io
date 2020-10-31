@@ -16,10 +16,11 @@ categories: statistical models
 	
  Common tools of parameter inference:
 	
- * t-tests, F-tests, and similar tests
- * p-values and confidence intervals for point estimates
+ * t-tests, F-tests, and similar hypothesis tests
+ * p-values, significance levels, and confidence intervals for parameter estimates
+ * Properties of the asymptotic distribution of those parameters
  * OLS assumptions for linear models (best linear unbiased estimator) 
- * Parametric assumptions about the underlying data process (GLMs)
+ * Parametric assumptions about the underlying data process such as GLMs
 
 <br/><br/>
 
@@ -36,8 +37,8 @@ categories: statistical models
  Common tools of predictive modeling:
  
  * More complicated and non-linear functional forms
- * Piecewise techniques 
+ * Nonparametric interpolation such as splines 
  * Iterative re-weighting or re-fitting model terms
- * Model aggregation and ensembles
- * "Black-box" machine learning algorithms too complex for a single equation (NNs
+ * Model aggregation and ensemble techniques
+ * "Black-box" algorithms too complex for a single equation (NNs and random forest)
 	
