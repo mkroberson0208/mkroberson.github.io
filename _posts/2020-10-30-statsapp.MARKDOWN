@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Two Distinct Applications of Statistical Models"
+date:   2020-10-30 10:30:57 -0400
+categories: statistical models
+---
+
+
+## 1. Parameter Inference
+
+ In the empirical or natural sciences, statistical models are generally used to evaluate point estimates of the parameters. The actual scale of a coefficient is important for scientific interpretation. From a broad array of potential models or inferential techniques, it is vital to use those that produce accurate parameter values in the absolute sense.
+	
+ Gathering data in this context can be time-intensive and costly. Often conducted under controlled conditions, the experimenter wants to learn as much as possible about the underlying process from a small sample size (N < 100). This led to a broad class of frequentist techniques that assume infinitely repeatable independent and identically disturbed (I.I.D.) processes. By extrapolating the data out into the infinite asymptote, a variety of tests can generalize parameter values from limited information.
+
+ It matters not only that asymptotic parameter estimates are accurate in the sense of converging to the underlying actual value (“unbiased”), but also that the variability of this estimator has been minimized with respect to new data (“efficiency”). Additional criteria for parameter estimates include robustness, sufficiency, and completeness.
+	
+ Common tools of parameter inference:
+	
+ * t-tests, F-tests, and similar tests
+ * p-values and confidence intervals for point estimates
+ * OLS assumptions for linear models (best linear unbiased estimator) 
+ * Parametric assumptions about the underlying data process (GLMs)
+
+<br/><br/>
+
+## 2. Data Prediction
+
+ In economics, finance, marketing, or other real-world applications, often times only the model's predictive ability is important, not the properties of parameter values or their distribution. The exact parameters might be irrelevant to the point a model’s functional form , perhaps too complicated to express in a single equation.
+	
+ Prediction from data is measured by some loss function (). For classification problems. Performance measurement can be fine . Often the modeler 
+	
+ To ensure the predictive ability . Cross-validation and other out-of-sample testing techniques 
+	
+ There are no requirements that 
+	
+ Common tools of predictive modeling:
+ 
+ * More complicated and non-linear functional forms
+ * Piecewise techniques 
+ * Iterative re-weighting or re-fitting model terms
+ * Model aggregation and ensembles
+ * "Black-box" machine learning algorithms too complex for a single equation (NNs
+	
