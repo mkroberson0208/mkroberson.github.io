@@ -12,33 +12,35 @@ categories: statistical models
 	
  Gathering data in this context can be time-intensive and costly. Often conducted under controlled conditions, the experimenter wants to learn as much as possible about the underlying process from a small sample size (N < 100). This led to a broad class of frequentist techniques that assume infinitely repeatable independent and identically disturbed (I.I.D.) processes. By extrapolating the data out into the infinite asymptote, a variety of tests can generalize parameter values from limited information.
 
- It matters not only that asymptotic parameter estimates are accurate in the sense of converging to the underlying actual value (“unbiased”), but also that the variability of this estimator has been minimized with respect to new data (“efficiency”). Additional criteria for parameter estimates include robustness, sufficiency, and completeness.
+ It matters not only that parameter estimates are accurate in the sense of converging to their actual value (“unbiased”), but also that the variability of this estimator has been minimized with respect to new data (“efficient”). Additional criteria include insensitivity to outlier errors ("robust"), uniqueness in value ("identfied"), and maximum information capture ("sufficient").
 	
  Common tools of parameter inference:
 	
- * t-tests, F-tests, and similar hypothesis tests
+ * t-tests, F-tests, and other hypothesis tests
  * p-values, significance levels, and confidence intervals for parameter estimates
- * Properties of the asymptotic distribution of those parameters
+ * Properties of the asymptotic distribution of parameters
  * OLS assumptions for linear models (best linear unbiased estimator) 
- * Parametric assumptions about the underlying data process such as GLMs
+ * Parametric assumptions about the underlying data process (GLMs)
 
 <br/><br/>
 
 ## 2. Data Prediction
 
- In economics, finance, marketing, or other real-world applications, often times only the model's predictive ability is important, not the properties of parameter values or their distribution. The exact parameters might be irrelevant to the point a model’s functional form , perhaps too complicated to express in a single equation.
+ In economics, finance, marketing, or other real-world applications, often times only predictive accuracy on new data is important, not the properties of parameter values or their distribution. The exact parameters might be irrelevant to the point a model’s functional form , perhaps too complicated to express in a single equation.
 	
- Prediction from data is measured by some loss function (). For classification problems. Performance measurement can be fine . Often the modeler 
+ Prediction from data is measured by some loss function that assigns numeric penalty between predicted and actual target variables. For classification problems. Performance measurement can be fine . Often the modeler 
 	
  To ensure the predictive ability . Cross-validation and other out-of-sample testing techniques 
 	
- There are no requirements that 
+ There are no requirements that the data represent a time-constant process that could be sampled repetable. and more recent market conditions is more salient to today's forecast.
 	
  Common tools of predictive modeling:
  
  * More complicated and non-linear functional forms
- * Nonparametric interpolation such as splines 
- * Iterative re-weighting or re-fitting model terms
- * Model aggregation and ensemble techniques
+ * Local interpolation (splines, nearest neighbor, clustering)
+ * Iterative re-weighting or re-fitting model terms during estimation
+ * Model aggregation and ensembles
  * "Black-box" algorithms too complex for a single equation (NNs and random forest)
+ * Dimensionalty reduction due to large number of data features
+ 
 	
