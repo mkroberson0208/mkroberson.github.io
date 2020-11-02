@@ -26,11 +26,11 @@ categories: statistical models
 
 ## 2. Data Prediction
 
- In economics, finance, marketing, or other real-world applications, often times only predictive accuracy on new data is important, not the properties of parameter values or their distribution. The exact parameters might be irrelevant to the point a model’s functional form , perhaps too complicated to express in a single equation.
+ In economics, finance, marketing, or other real-world applications, often times only predictive accuracy on new data is important, not the properties of parameter values or their distribution. The exact parameters might be irrelevant to the point that a model’s functional form isn't shown in the analysis, perhaps too complicated to express in a single equation.
 	
- Prediction from data is measured by some loss function that assigns numeric penalty between predicted and actual target variables. For classification problems. Performance measurement can be fine . Often the modeler 
+ Prediction from data is measured by some loss function that assigns numeric penalty between predicted and actual target variables. For classification problems, this might be % correctly classified. For numeric prediction problems, this might be squared or absolute error. Performance measurement can be fine tuned with other derived statistics .
 	
- To ensure the predictive ability . Cross-validation and other out-of-sample testing techniques 
+ To ensure the predictive ability isn't overstated by in-sample performance, the final model test results should reflect a hold-out sample not used in calibration. Cross-validation and other out-of-sample testing techniques ensure . The "bias" or , or variability from using different calibration subsets.
 	
  There are no requirements that the data represent a time-constant process that could be sampled repetable. and more recent market conditions is more salient to today's forecast.
 	
