@@ -10,7 +10,7 @@ categories: statistical models
 
  In the empirical or natural sciences, statistical models are generally used to evaluate point estimates of the parameters. The actual scale of a coefficient is important for scientific interpretation. From a broad array of potential models or inferential techniques, it is vital to use those that produce accurate parameter values in the absolute sense.
 	
- Gathering data in this context can be time-intensive and costly. Often conducted under controlled conditions, the experimenter wants to learn as much as possible about the underlying process from a small sample size (N < 100). This led to a broad class of frequentist techniques that assume infinitely repeatable independent and identically disturbed (I.I.D.) processes. By extrapolating the data out into the infinite asymptote, a variety of tests can generalize parameter values from limited information.
+ Gathering data in this context can be time-intensive and costly. Often conducted under controlled conditions, the experimenter wants to learn as much as possible about the underlying process from a small sample size (N < 100). This led to a broad class of frequentist techniques that assume infinitely repeatable independent and identically distributed (I.I.D.) processes. By extrapolating the data out into the infinite asymptote, a variety of tests can generalize parameter values from limited information.
 
  It matters not only that parameter estimates are accurate in the sense of converging to their actual value (“unbiased”), but also that the variability of this estimator has been minimized with respect to new data (“efficient”). Additional criteria include insensitivity to outlier errors ("robust"), uniqueness in value ("identfied"), and maximum information capture ("sufficient").
 	
@@ -26,13 +26,13 @@ categories: statistical models
 
 ## 2. Data Prediction
 
- In economics, finance, marketing, or other real-world applications, often times only predictive accuracy on new data is important, not the properties of parameter values or their distribution. The exact parameters might be irrelevant to the point that a model’s functional form isn't shown in the analysis, perhaps too complicated to express in a single equation.
+ In economics, finance, marketing, or other real-world applications, often times only predictive accuracy on new data is important, not the properties of parameter values or their distribution. The parameters might be irrelevant to the point that a model’s functional form isn't shown in the analysis, perhaps too complicated for a single equation.
 	
- Prediction from data is measured by some loss function that assigns numeric penalty between predicted and actual target variables. For classification problems, this might be % correctly classified. For numeric prediction problems, this might be squared or absolute error. Performance measurement can be fine tuned with other derived statistics .
+ Prediction from data is measured by some loss function that assigns numeric penalty between predicted and actual target variables. For classification problems, this might be % correctly classified. For numeric prediction problems, this might be squared or absolute error. Performance measurement can be fine-tuned with other derived statistics such as AUC-ROC or information criteria.
 	
- To ensure the predictive ability isn't overstated by in-sample performance, the final model test results should reflect a hold-out sample not used in calibration. Cross-validation and other out-of-sample testing techniques ensure . The "bias" or , or variability from using different calibration subsets.
+ To ensure the predictive ability of a model isn't overstated by in-sample performance, the final test results should reflect a hold-out sample not used in calibration. Cross-validation and other out-of-sample testing techniques ensure model "bias" or error in performance is minimized while balanceing against model "variance" or variability from using different calibration subsets.
 	
- There are no requirements that the data represent a time-constant process that could be sampled repetable. and more recent market conditions is more salient to today's forecast.
+ There are no requirements that the data represent a time-constant process that could be sampled repeatedly. In many cases the data is specific to history and reflects idiosynchratic qualitative factors or structural regimes. Datasets can number in the millions of rows due to automatic computer sampling. Sometimes more data isn't always better as in risk management, since more recent market conditions are usually more salient to today's forecast.
 	
  Common tools of predictive modeling:
  
